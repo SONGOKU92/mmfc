@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MFC - Formation Développement HTML/CSS">
+    <title>MFC - Formation HTML/CSS | Formation Professionnelle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-complementaire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .formation-detail {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .formation-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .formation-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--primary-color);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--white);
+        }
+
+        .formation-title h2 {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+
+        .key-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .info-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .info-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .info-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .programme {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+        }
+
+        .programme h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--gray-100);
+        }
+
+        .module {
+            margin-bottom: 2rem;
+        }
+
+        .module h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .module ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+
+        .module ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .module ul li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: -1.5rem;
+        }
+
+        .inscription-btn {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .btn-inscription {
+            display: inline-block;
+            background: var(--success);
+            color: var(--white);
+            padding: 1rem 3rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-inscription:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-logo">MFC</li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="formation.php">Formations</a></li>
+                <li><a href="financement.php">Financement</a></li>
+                <li><a href="espace-personnel.php">Espace Personnel</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="inscription.php" class="btn-primary">Inscription</a></li>
+            </ul>
+    </header>
+
+    <main>
+        <section class="hero-section not-home-hero">
+            <div class="hero-content">
+                <h1>HTML/CSS</h1>
+                <p>Maîtrisez les fondamentaux du développement web et créez des sites internet modernes</p>
+            </div>
+        </section>
+
+        <div class="formation-detail">
+            <div class="formation-header">
+                <div class="formation-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="formation-title">
+                    <h2>Développement HTML/CSS</h2>
+                    <p>Formation complète pour devenir développeur web front-end</p>
+                </div>
+            </div>
+
+            <div class="key-info">
+                <div class="info-card">
+                    <i class="far fa-clock"></i>
+                    <h3>Durée</h3>
+                    <p>3 mois (420 heures)</p>
+                    <p>35 heures/semaine</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-euro-sign"></i>
+                    <h3>Prix</h3>
+                    <p>2 500 €</p>
+                    <p>Financement possible</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Niveau requis</h3>
+                    <p>Débutant accepté</p>
+                    <p>Passion pour le web</p>
+                </div>
+            </div>
+
+            <div class="programme">
+                <h3>Programme de la formation</h3>
+                
+                <div class="module">
+                    <h4>Module 1 : Les bases du HTML</h4>
+                    <ul>
+                        <li>Structure d'une page HTML</li>
+                        <li>Les balises essentielles</li>
+                        <li>Les liens et les images</li>
+                        <li>Les formulaires</li>
+                        <li>Les tableaux</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4>Module 2 : CSS et mise en forme</h4>
+                    <ul>
+                        <li>Les sélecteurs CSS</li>
+                        <li>Mise en forme du texte</li>
+                        <li>Le modèle de boîte</li>
+                        <li>Flexbox et Grid</li>
+                        <li>Les animations et transitions</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4>Module 3 : Responsive Design</h4>
+                    <ul>
+                        <li>Media queries</li>
+                        <li>Mobile-first</li>
+                        <li>Images responsive</li>
+                        <li>Frameworks CSS (Bootstrap)</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4>Module 4 : Projet professionnel</h4>
+                    <ul>
+                        <li>Création d'un site web complet</li>
+                        <li>Bonnes pratiques</li>
+                        <li>Optimisation et performance</li>
+                        <li>Mise en ligne</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inscription-btn">
+                <a href="inscription.php" class="btn-inscription">
+                    <i class="fas fa-sign-in-alt"></i>
+                    S'inscrire à la formation
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MFC - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

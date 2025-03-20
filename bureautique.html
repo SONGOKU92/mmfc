@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MFC - Formation Bureautique - Suite Office">
+    <title>MFC - Formation Bureautique | Formation Professionnelle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-complementaire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .formation-detail {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .formation-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .formation-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--primary-color);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--white);
+        }
+
+        .formation-title h2 {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+
+        .key-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .info-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .info-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .info-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .programme {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+        }
+
+        .programme h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--gray-100);
+        }
+
+        .module {
+            margin-bottom: 2rem;
+        }
+
+        .module h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .module h4 i {
+            font-size: 1.2rem;
+        }
+
+        .module ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+
+        .module ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .module ul li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: -1.5rem;
+        }
+
+        .inscription-btn {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .btn-inscription {
+            display: inline-block;
+            background: var(--success);
+            color: var(--white);
+            padding: 1rem 3rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-inscription:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .certifications {
+            background: var(--gray-50);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .certifications h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .certifications ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .certification-item {
+            background: var(--white);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .certification-item i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-logo">MFC</li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="formation.php">Formations</a></li>
+                <li><a href="financement.php">Financement</a></li>
+                <li><a href="espace-personnel.php">Espace Personnel</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="inscription.php" class="btn-primary">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section not-home-hero">
+            <div class="hero-content">
+                <h1>Bureautique</h1>
+                <p>Maîtrisez les outils bureautiques essentiels pour votre réussite professionnelle</p>
+            </div>
+        </section>
+
+        <div class="formation-detail">
+            <div class="formation-header">
+                <div class="formation-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="formation-title">
+                    <h2>Formation Bureautique Complète</h2>
+                    <p>Perfectionnement sur la suite Microsoft Office et outils bureautiques</p>
+                </div>
+            </div>
+
+            <div class="key-info">
+                <div class="info-card">
+                    <i class="far fa-clock"></i>
+                    <h3>Durée</h3>
+                    <p>2 mois (280 heures)</p>
+                    <p>35 heures/semaine</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-euro-sign"></i>
+                    <h3>Prix</h3>
+                    <p>1 500 €</p>
+                    <p>Financement possible</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Niveau requis</h3>
+                    <p>Tous niveaux</p>
+                    <p>Débutants bienvenus</p>
+                </div>
+            </div>
+
+            <div class="programme">
+                <h3>Programme de la formation</h3>
+                
+                <div class="module">
+                    <h4><i class="fas fa-file-word"></i> Module 1 : Microsoft Word</h4>
+                    <ul>
+                        <li>Mise en forme avancée de documents</li>
+                        <li>Styles et modèles</li>
+                        <li>Mise en page professionnelle</li>
+                        <li>Publipostage</li>
+                        <li>Tables des matières et index</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4><i class="fas fa-file-excel"></i> Module 2 : Microsoft Excel</h4>
+                    <ul>
+                        <li>Formules et fonctions avancées</li>
+                        <li>Tableaux croisés dynamiques</li>
+                        <li>Graphiques élaborés</li>
+                        <li>Analyse de données</li>
+                        <li>Macros simples</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4><i class="fas fa-file-powerpoint"></i> Module 3 : PowerPoint</h4>
+                    <ul>
+                        <li>Création de présentations professionnelles</li>
+                        <li>Animations et transitions</li>
+                        <li>Masques et modèles</li>
+                        <li>Intégration multimédia</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4><i class="fas fa-envelope"></i> Module 4 : Outlook</h4>
+                    <ul>
+                        <li>Gestion de la messagerie</li>
+                        <li>Organisation du calendrier</li>
+                        <li>Gestion des contacts</li>
+                        <li>Tâches et notes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="certifications">
+                <h3>Certifications disponibles</h3>
+                <ul>
+                    <li class="certification-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>TOSA Bureautique</span>
+                    </li>
+                    <li class="certification-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Microsoft Office Specialist (MOS)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="inscription-btn">
+                <a href="inscription.php" class="btn-inscription">
+                    <i class="fas fa-sign-in-alt"></i>
+                    S'inscrire à la formation
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MFC - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

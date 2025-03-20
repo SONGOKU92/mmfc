@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MFC - Formation Développement Java">
+    <title>MFC - Formation Java | Formation Professionnelle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-complementaire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .formation-detail {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .formation-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .formation-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--primary-color);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--white);
+        }
+
+        .formation-title h2 {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+
+        .key-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .info-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .info-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .info-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .programme {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+        }
+
+        .programme h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--gray-100);
+        }
+
+        .module {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            background: var(--gray-50);
+        }
+
+        .module h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .module ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+
+        .module ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .module ul li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: -1.5rem;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .tech-item {
+            background: var(--white);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .tech-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .inscription-btn {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .btn-inscription {
+            display: inline-block;
+            background: var(--success);
+            color: var(--white);
+            padding: 1rem 3rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-inscription:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .debouches {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+        }
+
+        .debouches h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .job-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .job-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--gray-50);
+            border-radius: 0.5rem;
+        }
+
+        .job-item i {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-logo">MFC</li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="formation.php">Formations</a></li>
+                <li><a href="financement.php">Financement</a></li>
+                <li><a href="espace-personnel.php">Espace Personnel</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="inscription.php" class="btn-primary">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section not-home-hero">
+            <div class="hero-content">
+                <h1>Java</h1>
+                <p>Devenez développeur Java et maîtrisez un des langages les plus demandés sur le marché</p>
+            </div>
+        </section>
+
+        <div class="formation-detail">
+            <div class="formation-header">
+                <div class="formation-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="formation-title">
+                    <h2>Formation Développeur Java</h2>
+                    <p>Formation intensive au développement d'applications avec Java</p>
+                </div>
+            </div>
+
+            <div class="key-info">
+                <div class="info-card">
+                    <i class="far fa-clock"></i>
+                    <h3>Durée</h3>
+                    <p>6 mois (840 heures)</p>
+                    <p>35 heures/semaine</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-euro-sign"></i>
+                    <h3>Prix</h3>
+                    <p>3 500 €</p>
+                    <p>Financement possible</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Niveau requis</h3>
+                    <p>Bases en programmation</p>
+                    <p>Logique algorithmique</p>
+                </div>
+            </div>
+
+            <div class="programme">
+                <h3>Programme de la formation</h3>
+                
+                <div class="module">
+                    <h4>Module 1 : Fondamentaux Java</h4>
+                    <ul>
+                        <li>Syntaxe et types de données</li>
+                        <li>Programmation Orientée Objet (POO)</li>
+                        <li>Collections et génériques</li>
+                        <li>Gestion des exceptions</li>
+                        <li>Interfaces et classes abstraites</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4>Module 2 : Java Avancé</h4>
+                    <ul>
+                        <li>Programmation concurrente</li>
+                        <li>Streams et lambdas</li>
+                        <li>Entrées/Sorties (I/O)</li>
+                        <li>JDBC et accès aux bases de données</li>
+                        <li>Tests unitaires avec JUnit</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4>Module 3 : Frameworks & Outils</h4>
+                    <ul>
+                        <li>Spring Framework & Spring Boot</li>
+                        <li>Hibernate/JPA</li>
+                        <li>Maven/Gradle</li>
+                        <li>Git et GitHub</li>
+                        <li>API REST et Microservices</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4>Module 4 : Projet Professionnel</h4>
+                    <ul>
+                        <li>Développement d'une application complète</li>
+                        <li>Architecture en couches</li>
+                        <li>Bonnes pratiques et patterns</li>
+                        <li>Déploiement et documentation</li>
+                        <li>Travail en équipe avec Git</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="debouches">
+                <h3>Débouchés professionnels</h3>
+                <div class="job-grid">
+                    <div class="job-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Développeur Java</span>
+                    </div>
+                    <div class="job-item">
+                        <i class="fas fa-server"></i>
+                        <span>Développeur Backend</span>
+                    </div>
+                    <div class="job-item">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Lead Développeur</span>
+                    </div>
+                    <div class="job-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Architecte Java</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inscription-btn">
+                <a href="inscription.php" class="btn-inscription">
+                    <i class="fas fa-sign-in-alt"></i>
+                    S'inscrire à la formation
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MFC - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

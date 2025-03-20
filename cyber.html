@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MFC - Formation Cybersécurité">
+    <title>MFC - Formation Cybersécurité | Formation Professionnelle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-complementaire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .formation-detail {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .formation-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .formation-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--primary-color);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--white);
+        }
+
+        .formation-title h2 {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+
+        .key-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .info-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .info-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .info-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .programme {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+        }
+
+        .programme h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--gray-100);
+        }
+
+        .module {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(to right, var(--gray-50), var(--white));
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .module h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .module ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+
+        .module ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .module ul li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: -1.5rem;
+        }
+
+        .certifications {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+        }
+
+        .certifications h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .certification-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .certification-card {
+            background: var(--gray-50);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+
+        .certification-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .inscription-btn {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .btn-inscription {
+            display: inline-block;
+            background: var(--success);
+            color: var(--white);
+            padding: 1rem 3rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-inscription:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .security-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .security-item {
+            background: var(--gray-50);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .security-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .security-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-logo">MFC</li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="formation.php">Formations</a></li>
+                <li><a href="financement.php">Financement</a></li>
+                <li><a href="espace-personnel.php">Espace Personnel</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="inscription.php" class="btn-primary">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section not-home-hero">
+            <div class="hero-content">
+                <h1>Formation Cybersécurité</h1>
+                <p>Devenez expert en sécurité informatique et protégez les systèmes d'information</p>
+            </div>
+        </section>
+
+        <div class="formation-detail">
+            <div class="formation-header">
+                <div class="formation-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="formation-title">
+                    <h2>Expert en Cybersécurité</h2>
+                    <p>Formation complète aux techniques de sécurité informatique</p>
+                </div>
+            </div>
+
+            <div class="key-info">
+                <div class="info-card">
+                    <i class="far fa-clock"></i>
+                    <h3>Durée</h3>
+                    <p>4 mois (560 heures)</p>
+                    <p>35 heures/semaine</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-euro-sign"></i>
+                    <h3>Prix</h3>
+                    <p>4 000 €</p>
+                    <p>Financement possible</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Niveau requis</h3>
+                    <p>Bases en informatique</p>
+                    <p>Notions de réseaux</p>
+                </div>
+            </div>
+
+            <div class="programme">
+                <h3>Programme de la formation</h3>
+                
+                <div class="module">
+                    <h4>Module 1 : Fondamentaux de la Cybersécurité</h4>
+                    <ul>
+                        <li>Introduction à la sécurité informatique</li>
+                        <li>Cryptographie et chiffrement</li>
+                        <li>Sécurité des réseaux</li>
+                        <li>Systèmes d'exploitation et sécurité</li>
+                        <li>Gestion des identités et des accès</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4>Module 2 : Protection et Défense</h4>
+                    <ul>
+                        <li>Pare-feu et systèmes de détection d'intrusion</li>
+                        <li>Sécurisation des applications web</li>
+                        <li>Protection contre les malwares</li>
+                        <li>Sécurité du Cloud</li>
+                        <li>Analyse des vulnérabilités</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4>Module 3 : Tests d'intrusion</h4>
+                    <ul>
+                        <li>Méthodologie des tests d'intrusion</li>
+                        <li>Outils de pentest</li>
+                        <li>Exploitation des vulnérabilités</li>
+                        <li>Tests d'intrusion web</li>
+                        <li>Rédaction de rapports</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h4>Module 4 : Gestion de la Sécurité</h4>
+                    <ul>
+                        <li>Normes et conformité (RGPD, ISO 27001)</li>
+                        <li>Gestion des incidents de sécurité</li>
+                        <li>Plan de continuité d'activité</li>
+                        <li>Audit de sécurité</li>
+                        <li>Sensibilisation des utilisateurs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="certifications">
+                <h3>Certifications préparées</h3>
+                <div class="certification-grid">
+                    <div class="certification-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>CompTIA Security+</h4>
+                        <p>Certification fondamentale en cybersécurité</p>
+                    </div>
+                    <div class="certification-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>CEH (Certified Ethical Hacker)</h4>
+                        <p>Certification en tests d'intrusion</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inscription-btn">
+                <a href="inscription.php" class="btn-inscription">
+                    <i class="fas fa-sign-in-alt"></i>
+                    S'inscrire à la formation
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MFC - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
